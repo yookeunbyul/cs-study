@@ -1,20 +1,5 @@
 ## CSR과 SSR의 차이는 무엇인가요?
 
-### SPA(Single Page Application)와 MPA(Multiple Page Application)
-
-- SPA
-  - SPA 구현을 위한 라이브러리, 프레임워크 : React, Vue, Angular
-
-하나의 HTML 파일을 기반으로 업데이트에 필요한 데이터만 서버에서 전달받아 자바스크립트가 동적으로 HTML 요소를 생성해 화면을 보여주는 방식의 웹 어플리케이션이다.
-
-- MPA
-
-전통적인 방식으로 사용자가 페이지를 요청할 때마다, 웹 서버가 요청한 UI와 필요한 데이터를 HTML로 파싱해서 보여주는 방식의 웹 어플리케이션이다.
-
-SPA가 사용하는 렌더링 방식은 CSR이고, MPA가 사용하는 렌더링 방식은 SSR이다.
-
-<br />
-
 ### CSR(Client Side Rendering)
 
 CSR에선 브라우저가 서버에 HTML과 JS 파일을 요청한 후 로드되면 그 후엔 사용자의 상호작용에 따라 JS를 이용해서 동적으로 렌더링을 시킨다.
