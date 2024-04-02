@@ -84,6 +84,24 @@ SSR 관점에서 중요한 건 런타임에 스타일시트를 생성하지 않�
 
 <br />
 
+### 프론트엔드의 흐름, build-time?
+
+```
+현대 프론트엔드의 작업흐름이 build-time에서 최적화가 이뤄지고 있다.
+
+- 최신 CSS-in-JS 라이브러리들이 build-time(zero-runtime)으로 개발되고 있다.
+
+- TypeScript를 통해서 build-time 및 run-time 이전에 type 체크, code IntelliSense를 제공해준다.
+
+- webpack, babel를 통해서 다양한 브라우저에서 동작하는 앱을 만든다.
+
+- Next.js가 각광을 받으면서 CSR에서 SSR로 웹이 개발되어 가고 있다.
+
+- React, Vue를 넘어서 현재 Svelte가 많은 사람들의 주목을 받고 있다.
+
+    - run-time에서 Virtual DOM를 통해 비교하여 변경사항을 반영하는 것이 아닌, build-time에서 어느 부분이 변경될지 파악하고 DOM을 업데이트하는 효율적인 명령 코드로 변환하여 사용한다.
+```
+
 ---
 
 ### 출처
@@ -91,3 +109,5 @@ SSR 관점에서 중요한 건 런타임에 스타일시트를 생성하지 않�
 https://babycoder05.tistory.com/entry/Nextjs-TypeScript-Tailwind-CSS-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Tailwind-CSS-%EC%9E%A5%EB%8B%A8%EC%A0%90
 
 https://velog.io/@shinhw371/CSS-why-Nextjs-recommand-Tailwind#ssr%EC%97%90%EC%84%9C%EC%9D%98-css-in-js
+
+https://bepyan.github.io/blog/2022/css-in-js
