@@ -34,11 +34,11 @@ CSS-in-JS는 말 그대로 JS로 작성한 CSS이다.
 
   객체 형식으로 CSS를 작성.
 
-  ![alt text](image.png)
+  <img width="631" alt="react-jss-html" src="https://github.com/yookeunbyul/RisingTest_wanted/assets/91243651/20537f96-0728-4674-9499-8ac22d4ade69">
 
   head 태그 안에 style 태그가 생성된다.
 
-  ![alt text](image-1.png)
+  <img width="615" alt="react-jss-cssom" src="https://github.com/yookeunbyul/RisingTest_wanted/assets/91243651/296e5d03-2508-4f31-9690-11cb163c5e4d">
 
   CSSOM 객체에도 1개의 CSSSyleSheet가 생성되고 2개의 CSSStyleRule이 생성된다.
 
@@ -56,7 +56,7 @@ CSS-in-JS는 말 그대로 JS로 작성한 CSS이다.
   };
   ```
 
-  ![alt text](image-2.png)
+  <img width="828" alt="react-jss-condition-1-html" src="https://github.com/yookeunbyul/RisingTest_wanted/assets/91243651/ddea076e-56fb-4e38-a930-adc270b85e7c">
 
   체크박스를 통해 조건부 스타일을 적용시키면 element에 class가 추가되어서 스타일이 적용된다.
 
@@ -97,7 +97,7 @@ useStyles의 인자로 넘겨준 props를 스타일 시트 객체에서 함수�
 
 clssName을 건드려서 스타일을 적용하는게 아닌..
 
-![alt text](image2.png)
+<img width="839" alt="react-jss-props-html" src="https://github.com/yookeunbyul/RisingTest_wanted/assets/91243651/15be1d12-2c7a-4df2-a9fe-238cde91b440">
 
 이전과는 다르게 style 태그에 css는 작성되어 있지 않다.
 
@@ -105,13 +105,13 @@ clssName을 건드려서 스타일을 적용하는게 아닌..
 
 root-0-2-1과 root-d?-0-2-?처럼 두 개씩 주입되어 있고 그중 하나는 각각 다른 클래스가 입력
 
-![alt text](image2-1.png)
+<img width="818" alt="react-jss-props-condition-cssom" src="https://github.com/yookeunbyul/RisingTest_wanted/assets/91243651/8c0c08b1-ca63-45cb-8503-df73a5daa0ac">
 
 CSSStyleSheet를 확인해보면 각 항목마다 **다르게 주입된 클래스별로 CSSStyleRule이 생성.**
 
 조건부 스타일을 할 경우,
 
-![alt text](image2-2.png)
+<img width="823" alt="react-jss-props-cssom" src="https://github.com/yookeunbyul/RisingTest_wanted/assets/91243651/8d541499-9617-4115-8a78-0556990ded40">
 
 **li 태그의 클래스는 변경된 것이 없고**, props.done으로 지정된 컴포넌트는 **CSSStyleRule이 변경**된다.
 
@@ -150,17 +150,19 @@ const Task = (props) => {
 export default Task;
 ```
 
-![alt text](image3.png)
-![alt text](image3-1.png)
+<img width="838" alt="sc-html" src="https://github.com/yookeunbyul/RisingTest_wanted/assets/91243651/4206cebe-cd93-4874-b1c3-9991c02a02fc">
+
+<img width="837" alt="sc-cssom" src="https://github.com/yookeunbyul/RisingTest_wanted/assets/91243651/bb057903-f628-4157-acf9-f78a6dd5f718">
 
 html head에 style 태그 안에 css 작성, 하나의 CSSStyleRule이 생성되고 그것이 각 li 태그에 같게 적용되어 있다.
 
-![alt text](image3-2.png)
-![alt text](image3-3.png)
+<img width="840" alt="sc-condition-html" src="https://github.com/yookeunbyul/RisingTest_wanted/assets/91243651/9c37a964-64b6-426b-8f47-32ddd038f604">
 
-조건부 스타일을 적용하자 html에서의 css가 생성되고 li 태그의 클래스 변경되고,
+<img width="840" alt="sc-condition-cssom" src="https://github.com/yookeunbyul/RisingTest_wanted/assets/91243651/d5afdc60-19f2-4907-8257-c092be172fe4">
 
-CSSStyleRule이 추가로 생성된다.
+**조건부 스타일을 적용하자 html에서의 css가 생성되고 li 태그의 클래스 변경되고,**
+
+**CSSStyleRule이 추가로 생성된다.**
 
 styled-components는 필요한 css를 생성해서 사용하고, props에 의한 동적인 스타일에서는 런타임에서 css(CSSStyleRule)을 생성하여 사용한다.
 
@@ -193,17 +195,17 @@ const Task = (props) => {
 export default Task;
 ```
 
-![alt text](image4.png)
+<img width="839" alt="emotion-html" src="https://github.com/yookeunbyul/RisingTest_wanted/assets/91243651/e850fe36-bd88-4ee3-9764-ff3ac522c7f0">
 
-![alt text](image4-1.png)
+<img width="836" alt="emotion-cssom" src="https://github.com/yookeunbyul/RisingTest_wanted/assets/91243651/3aaeb7b5-0a74-4a14-9a6b-0c70477cd72a">
 
 styled-components와 같이 style 태그 안에 css가 작성되고 하나의 CSSStyleRule 생성.
 
 각 div 태그에 같게 적용.
 
-![alt text](image4-2.png)
+<img width="842" alt="emotion-props-html" src="https://github.com/yookeunbyul/RisingTest_wanted/assets/91243651/7345dde2-d893-4ecc-86c2-980efac0697b">
 
-![alt text](image4-3.png)
+<img width="842" alt="emotion-props-cssom" src="https://github.com/yookeunbyul/RisingTest_wanted/assets/91243651/238c3dfc-2f7a-45b6-876e-88a892e1d77a">
 
 다른 라이브러리와 다르게 style 태그가 2개가 되고 CSSStyleRule이 추가된 것이 아닌 CSSStyleSheet가 추가된다.
 
