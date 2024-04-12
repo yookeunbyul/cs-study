@@ -83,8 +83,20 @@ best option은 refesh token을 httpOnly 쿠키로 설정해서 js가 접근 못�
 refresh token을 request에 담아 accessToken을 받기때문에 CSRF도 막을 수 있다.
 ```
 
+```
+: Refresh Token은 http only, secure Cookie에 저장 & Access Token은 로컬 변수에 저장
+
+=> CSRF 공격 : Cookie에 Access Token이 없기에 인증 불가 상태. http only secure 쿠키 특성상 refresh token 자체를 털 방법이 없음
+
+=> XSS 공격 : Access Token은 로컬 변수에 저장되어 있기에 탈취 불가
+
+=> Access Token을 만료시간을 짧게 가져감으로써 그나마 취약한 XSS를 좀 더 방어할 수 있음
+```
+
 <br />
 
 ### 참고
 
 https://velog.io/@0307kwon/JWT%EB%8A%94-%EC%96%B4%EB%94%94%EC%97%90-%EC%A0%80%EC%9E%A5%ED%95%B4%EC%95%BC%ED%95%A0%EA%B9%8C-localStorage-vs-cookie
+
+https://peter-coding.tistory.com/381
