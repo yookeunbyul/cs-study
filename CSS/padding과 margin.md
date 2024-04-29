@@ -13,3 +13,7 @@
   - margin은 객체의 **외부여백**
 
   - Border의 바깥쪽으로, **주변 요소와 거리를 두기 위한 영역**이다.
+
+### 출처
+
+https://velog.io/@hyejin4169/CSS-margin-padding-%EC%B0%A8%EC%9D%B4%EC%A0%90%EA%B3%BC-%EC%82%AC%EC%9A%A9%EB%B2%95-%EC%A0%95%EB%A6%AC
