@@ -66,3 +66,7 @@ em과 rem은 환경에 따라 변하는 상대단위이다.
         width: 10rem; /* 160px */
     }
   ```
+
+### 출처
+
+https://velog.io/@codns1223/CSS-px-em-rem-%EC%B0%A8%EC%9D%B4
