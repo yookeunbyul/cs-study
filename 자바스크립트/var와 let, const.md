@@ -190,3 +190,11 @@ let aLet = 'letHello';
 - const
 
   const 역시 호이스팅은 되지만 undefined로 초기화 되지 않는다.
+
+<br />
+
+### 출처
+
+https://velog.io/@edith_0318/%EC%8A%A4%EC%BD%94%ED%94%84%EC%9D%98-%EC%A2%85%EB%A5%98%EC%99%80-let-const-var-%ED%82%A4%EC%9B%8C%EB%93%9C
+
+https://dongwookit.tistory.com/48
